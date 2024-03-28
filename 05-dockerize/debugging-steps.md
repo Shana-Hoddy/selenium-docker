@@ -1,5 +1,10 @@
 # Follow these instructions carefully to debug your issues
 
+basic notes:
+1. package our jar files (update pom with needed files in the maven pluggins): mvn clean package -DskipTests
+2. create our docker image: docker build -t=vinsdocker/selenium .
+3. launch and run containers: docker-compose up
+
 - Ensure that you completely replace your pom dependencies with [this](../03-automation-framework/dependencies.md).
 - Compare your project with mine.
   - [This](./selenium-docker/) is my project. 

@@ -11,7 +11,7 @@ pipeline{
         stage('stage-1'){
             steps{
                 //bat "docker run -e NUMBER=${NUMBER} vinsdocker/squares"
-                sh "docker run -e NUMBER=${NUMBER} vinsdocker/squares"
+                bat "docker run -e NUMBER=${NUMBER} vinsdocker/squares"
             }
         }
 
@@ -20,13 +20,13 @@ pipeline{
                 NUMBER = 6
             }
             steps{
-                sh "docker run -e NUMBER=${NUMBER} vinsdocker/squares"
+                bat "docker run -e NUMBER=${NUMBER} vinsdocker/squares"
             }            
         }  
 
         stage('stage-3'){
             steps{
-                sh "docker run -e NUMBER=${NUMBER} vinsdocker/squares"
+                bat "docker run -e NUMBER=${NUMBER} vinsdocker/squares"
             }            
         }                
 
@@ -34,7 +34,7 @@ pipeline{
 
     post {
         always {
-            sh "docker system prune -f"
+            bat "docker system prune -f"
         }
     }
 

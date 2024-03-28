@@ -1,0 +1,7 @@
+1. bring up jenkins:
+cd to  here: 06-jenkins-ci-cd/01-jenkins/docker-compose.yaml
+then> docker-compose up
+2. bring up agent (local agent)
+log into jenkins
+click on our node: http://localhost:8080/computer/NODE1/
+follow the instructions to bring our node up and connect to jenkins

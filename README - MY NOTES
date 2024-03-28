@@ -1,0 +1,7 @@
+basics:
+1. create our jar file, this will use the maven plugin configs as specified in the pom file.
+mvn clean package -DskipTests
+2. create our image and name it vinsdocker/selenium "." build everything in this location.
+docker build -t=vinsdocker/selenium .
+3. spin up the containers as specified in the docker-compose.yaml file.
+docker-compose up

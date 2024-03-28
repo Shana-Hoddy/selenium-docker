@@ -10,3 +10,7 @@ services:
     - ./volumes/master:/var/jenkins_home
     environment:
     - JAVA_OPTS="-Dhudson.model.DirectoryBrowserSupport.CSP="
+
+
+    #from the console output when you do docker-compose up copy the admin password and paste it into
+    #localhost:8080 4eb81d3fb6f946f5a28c4313c7ef2d67
